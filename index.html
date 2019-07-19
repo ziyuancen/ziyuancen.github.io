@@ -199,79 +199,20 @@
     <p>
         Following is one of the related video done by Time.
     </p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/GBDc_sijkrM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GBDc_sijkrM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
 
-    <h3>Responsive interactive chart</h3>
+    <h3>Interactive multimedia fun</h3>
 
     <p>With the wide spread tools today, you don't have to learn frontend technology in order to make interactive charts. For example, there are off-the-shelf online tools like
         <a href="https://infogram.com/">infogram.com</a>,
         <a href="https://www.datawrapper.de/">datawrapper</a>, and
         <a href="https://flourish.studio/">flourish</a>.
-    </p>
 
-    <p>
-        If you are Python developer, libraries like <code>plotly</code>, <code>pyecharts</code>, <code>bokeh</code>, and <code>folium</code> can help you generate interactive charts and maps within Python environment. Next question is how to embed those
-        interactive charts into your final work.
-    </p>
+    <h2>Grand finale</h2>
 
-    <p>
-        The first thing is to use your chosen library/ online tool to export a standalone webpage that includes your chart. The webpage may come along with other auxiliary files like Javascript and CSS. You need to put those files all in one folder. Then use
-        your browser to visit the webpage and make sure the chart looks normal as a standalone project. After that, ou can apply the same technique used from above responsive Youtube video to embed it into your web story Just use the following code block
-        and replace the "src" attribute with the right path to your stand alone interactive chart.
-    </p>
-
-    <p>
-        <code>&#x3C;responsive-block&#x3E;&#x3C;iframe src=&#x27;//server-name/path/to/the/file.html&#x27; frameborder=&#x27;0&#x27; allowfullscreen&#x3E;&#x3C;/iframe&#x3E;&#x3C;/responsive-block&#x3E;</code>
-    </p>
-
-    <p> Here is an example of a map made from Python's <code>folium</code> library. It is the original hi-fi version of the raster image used in <a href="https://mp.weixin.qq.com/s/aFfa7WlyT0vwXBlDYvacCg">this blog post</a>. Although the following one is
-        not interactive or animated, you can easily make it so from the <code>folium</code> library. </p>
-
-    <responsive-block>
-        <iframe src='charts/openrice-sichuan-food/map.html' frameborder='0' allowfullscreen>
-        </iframe>
-    </responsive-block>
-
-    <p>
-        Following is an animated and interactive map of Sichuan's earthquake in past 100 years. It is made by D3. The project includes many auxiliary files to make the chart work. We'd like to show you that the responsive block works with not only charts on your
-        local disk, but also charts (more precisely HTML pages) from the Internet. Note, in the "src" attribute, <strong>please start your URL with "//"</strong>, not "http", or "https". This notation lets the browser determine which protocol
-        to use and improves compatibility.
-    </p>
-
-    <responsive-block>
-        <iframe src='//hupili.net/20170800-sichuan-earthquake-in-100years/' frameborder='0' allowfullscreen>
-        </iframe>
-    </responsive-block>
-
-    <p>
-        Note that the default aspect ratio is 16:9. Sometimes, 1:1 may look better on a vertical screen. Or, you can try 4:3, whose code is available in HTML comment block. Other aspect ratios are not suggested since this is a starter's template.
-    </p>
-
-    <ratio-1-to-1>
-        <responsive-block>
-            <iframe src='//hupili.net/20170800-sichuan-earthquake-in-100years/' frameborder='0' allowfullscreen>
-        </iframe>
-        </responsive-block>
-    </ratio-1-to-1>
-
-    <!-- 
-    <ratio-4-to-3>
-        <responsive-block>
-            <iframe src='//hupili.net/20170800-sichuan-earthquake-in-100years/' frameborder='0' allowfullscreen>
-            </iframe>
-        </responsive-block>
-    </ratio-4-to-3> 
-    -->
-
-    <h2>This page on desktop?</h2>
-
-    <p>It does not use up the entire space on a desktop computer. However it is still readable. Now that 80% traffic is on mobile web, this should suffice for most web stories. Also note that, you just learned HTML 10 minutes ago and this is what you can
-        make.
-    </p>
-
-    <h2>Epilogue</h2>
-
-    <p>Have fun.</p>
+    <p>Thanks for checking our baby out.</p>
 
     <p>Find the GitHub repo <a href="https://github.com/hupili/big-road">here</a>.</p>
 
